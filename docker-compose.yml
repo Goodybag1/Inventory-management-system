@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  inventory-app:
+    build: .
+    container_name: inventory-management-system
+    volumes:
+      - .:/app
+    command: python app.py
